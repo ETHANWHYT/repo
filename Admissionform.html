@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admission Form for PM SHRI Govt. Sr. Sec. School Ajeetpura">
+    <title>Admission Form - PM SHRI Govt. Sr. Sec. School Ajeetpura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 0;
+            background: rgba(0, 0, 0, 0.9);
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #00ffcc;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background: #1e1e1e;
+            border-radius: 20px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #00ffcc;
+            margin-bottom: 20px;
+        }
+
+        .admission-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .admission-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .admission-form input,
+        .admission-form select,
+        .admission-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #00ffcc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .admission-form button {
+            width: 100%;
+            background: #00ffcc;
+            color: #121212;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .admission-form button:hover {
+            background: #ff0099;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #1e1e1e;
+            padding: 30px 0;
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 2px solid #00ffcc;
+        }
+
+        footer a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #ff0099;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section id="admission-form">
+        <h2>Admission Form</h2>
+        <hr>
+        <p>Please fill out the form below to apply for admission to PM SHRI Govt. Sr. Sec. School Ajeetpura.</p>
+
+        <form class="admission-form" method="POST" action="submit_admission_form.php">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full_name" required>
+
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" name="dob" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="parent-contact">Parent/Guardian Contact Number:</label>
+            <input type="tel" id="parent-contact" name="parent_contact" required>
+
+            <label for="previous-school">Previous School (if any):</label>
+            <input type="text" id="previous-school" name="previous_school">
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PM SHRI Govt. Sr. Sec. School Ajeetpura. All rights reserved.</p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+    </footer>
+</body>
+
+</html>
